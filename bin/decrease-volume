@@ -1,0 +1,2 @@
+amixer set Master 5%- > /dev/null
+notify-send "Volume is now decreased to `amixer get Master | egrep -o "[0-9]+%"`."

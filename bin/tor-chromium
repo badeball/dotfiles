@@ -1,0 +1,3 @@
+#!/bin/bash
+
+chromium https://check.torproject.org/ --proxy-server="socks://localhost:9050" --incognito

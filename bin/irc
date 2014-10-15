@@ -1,0 +1,27 @@
+#!/usr/bin/env ruby
+
+require 'resolv'
+
+spinner = %w(
+  /
+  -
+  \\
+  |
+)
+
+Thread.new do
+  spinner.cycle do |spin|
+    print "\r#{spin} Waiting for internet.."
+    sleep 0.1
+  end
+end
+
+def has_internet?(check = 'lynx.stud.ntnu.no')
+  Resolv.new.getaddress check
+rescue StandardError => e
+  false
+end
+
+sleep 0.1 until has_internet?
+
+exec 'ssh jonasbal@lynx.stud.ntnu.no -t "screen -rd"'

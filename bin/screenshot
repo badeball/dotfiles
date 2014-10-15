@@ -1,0 +1,5 @@
+mkdir -p ~/pictures/screenshots/
+
+scrot ~/pictures/screenshots/%Y-%m-%d-%T-screenshot.png
+
+notify-send "A screenshot has been saved."

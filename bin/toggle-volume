@@ -1,0 +1,3 @@
+amixer set Master toggle
+
+notify-send "Volume is toggled `amixer get Master | ruby -e 'STDIN.read.match(/(?<=\[)(on|off)(?=\])/); puts $1'`."
