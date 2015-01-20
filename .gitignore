@@ -1,0 +1,9 @@
+# Project directory for my IDE (RubyMine)
+.idea/
+
+# Ruby version manager
+.ruby-version
+.ruby-gemset
+
+# Swap files for Vim
+*.swp
