@@ -14,7 +14,6 @@ function lll {
 # SSHs
 alias json='ssh media.coreticket.no'
 alias lynx='ssh jonasbal@lynx.stud.ntnu.no'
-alias irc='ssh jonasbal@lynx.stud.ntnu.no -t "screen -rd"'
 alias vilje='ssh jonasbal@vilje.hpc.ntnu.no'
 alias itera='ssh itera.coreticket.no'
 alias nurse='ssh jamundsen@193.19.64.100'
