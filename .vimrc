@@ -39,3 +39,5 @@ au FileType json set ts=2 sw=2
 au FileType javascript set ts=2 sw=2
 
 au FileType markdown set ts=2 sw=2
+
+au FileType less set ts=2 sw=2
