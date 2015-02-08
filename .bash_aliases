@@ -24,3 +24,7 @@ alias nurse='ssh jamundsen@193.19.64.100'
 alias b='bundle install'
 alias be='bundle exec'
 alias r='time bundle exec rspec -b'
+
+# Scary!
+alias skype='echo "You can not do this as a regular user"'
+alias steam='echo "You can not do this as a regular user"'
