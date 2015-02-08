@@ -24,6 +24,3 @@ alias nurse='ssh jamundsen@193.19.64.100'
 alias b='bundle install'
 alias be='bundle exec'
 alias r='time bundle exec rspec -b'
-
-# Etc
-alias skype='xhost +local: && sudo -u skype /usr/bin/skype'
