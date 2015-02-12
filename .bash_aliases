@@ -7,8 +7,6 @@ fi
 
 alias ll='ls -lh'
 
-alias sed='sed -r'
-
 function lll {
     ls -lh --color=always  "${@}" | less -RFX
 }
