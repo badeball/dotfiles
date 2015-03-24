@@ -7,3 +7,6 @@
 
 # Swap files for Vim
 *.swp
+
+# Local node modules
+node_modules
