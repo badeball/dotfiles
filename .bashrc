@@ -26,6 +26,6 @@ export PATH=$PATH:~/bin
 source '/usr/share/chruby/chruby.sh'
 source '/usr/share/chruby/auto.sh'
 
-HISTSIZE=5000
+HISTSIZE=1000000
 
 export EDITOR="vim"
