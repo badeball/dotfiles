@@ -21,7 +21,7 @@ if [ -f /usr/share/git/completion/git-completion.bash ]; then
 fi
 
 # add ~/bin to the search path
-export PATH=$PATH:~/bin
+export PATH=$PATH:~/bin:./node_modules/.bin
 
 source '/usr/share/chruby/chruby.sh'
 source '/usr/share/chruby/auto.sh'
