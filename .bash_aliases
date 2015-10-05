@@ -6,6 +6,7 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 alias ll='ls -lh'
+alias grep='grep --exclude-dir={.git,node_modules}'
 
 function lll {
     ls -lh --color=always  "${@}" | less -RFX
