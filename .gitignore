@@ -10,3 +10,6 @@
 
 # Local node modules
 node_modules
+
+# Ironment runcoms
+.envrc
