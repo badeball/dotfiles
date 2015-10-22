@@ -73,6 +73,10 @@ local layouts =
 }
 -- }}}
 
+wallpaper = io.popen('ls -d ~/.wallpapers/* | shuf -n 1 | xargs echo -n')
+beautiful.wallpaper = wallpaper:read()
+wallpaper:close()
+
 -- {{{ Wallpaper
 if beautiful.wallpaper then
     for s = 1, screen.count() do
