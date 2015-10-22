@@ -295,8 +295,6 @@ globalkeys = awful.util.table.join(
                   awful.util.eval, nil,
                   awful.util.getdir("cache") .. "/history_eval")
               end),
-    -- Menubar
-    awful.key({ modkey }, "p", function() menubar.show() end),
 
     -- Lock screen
     awful.key({ modkey,           }, ".",                       function () awful.util.spawn("i3lock -d -c 000000") end),
@@ -316,8 +314,9 @@ globalkeys = awful.util.table.join(
     awful.key({                   }, "XF86AudioPrev",           function () awful.util.spawn("/home/jonas/bin/spotify-cmd previous", false) end),
     awful.key({                   }, "XF86AudioPlay",           function () awful.util.spawn("/home/jonas/bin/spotify-cmd playpause", false) end),
     awful.key({                   }, "XF86AudioStop",           function () awful.util.spawn("/home/jonas/bin/spotify-cmd stop", false) end),
-    awful.key({                   }, "XF86AudioMedia",           function () awful.util.spawn("spotify", false) end)
+    awful.key({                   }, "XF86AudioMedia",          function () awful.util.spawn("spotify", false) end),
 
+    awful.key({ modkey            }, "p",                       function () awful.util.spawn("/home/jonas/bin/logged-monitor-update") end)
 )
 
 clientkeys = awful.util.table.join(

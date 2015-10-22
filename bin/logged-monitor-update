@@ -1,0 +1,1 @@
+rmonitor update --verbose 2>&1 | ts "%F %T" >> ~/.cache/rmonitor/log

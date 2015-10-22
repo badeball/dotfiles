@@ -4,7 +4,7 @@ setxkbmap -layout no
 
 [[ -f ~/.Xresources ]] && xrdb -merge ~/.Xresources
 
-rmonitor -u -v >> ~/.cache/rmonitor/stdout 2>> ~/.cache/rmonitor/stderr &
+~/bin/logged-monitor-update &
 
 pulseaudio --start
 
