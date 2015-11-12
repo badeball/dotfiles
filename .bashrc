@@ -25,6 +25,7 @@ export PATH=$PATH:~/bin:./node_modules/.bin
 
 source '/usr/share/chruby/chruby.sh'
 source '/usr/share/chruby/auto.sh'
+source '/usr/share/nvm/init-nvm.sh'
 
 HISTSIZE=1000000
 
