@@ -23,9 +23,9 @@ fi
 # add ~/bin to the search path
 export PATH=$PATH:~/bin:./node_modules/.bin
 
-source '/usr/share/chruby/chruby.sh'
-source '/usr/share/chruby/auto.sh'
-source '/usr/share/nvm/init-nvm.sh'
+[ -f '/usr/share/chruby/chruby.sh' ] && . '/usr/share/chruby/chruby.sh'
+[ -f '/usr/share/chruby/auto.sh' ] && . '/usr/share/chruby/auto.sh'
+[ -f '/usr/share/nvm/init-nvm.sh' ] && . '/usr/share/nvm/init-nvm.sh'
 
 HISTSIZE=1000000
 
