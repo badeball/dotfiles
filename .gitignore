@@ -8,8 +8,9 @@
 # Swap files for Vim
 *.swp
 
-# Local node modules
+# NPM stuff
 node_modules
+npm-debug.log
 
 # Ironment runcoms
 .envrc
