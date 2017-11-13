@@ -20,7 +20,7 @@ alias itera='ssh itera.coreticket.no'
 alias nurse='ssh jamundsen@193.19.64.100'
 
 # Ruby development
-alias b='bundle install'
+alias b='bundle'
 alias be='bundle exec'
 alias r='time bundle exec rspec -b'
 
