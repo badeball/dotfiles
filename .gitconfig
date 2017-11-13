@@ -1,3 +1,5 @@
+[user]
+    name = "Jonas Amundsen"
 [core]
 	editor = vim
 	excludesfile = /home/jonas/.gitignore
