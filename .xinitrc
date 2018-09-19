@@ -13,8 +13,6 @@ setxkbmap -layout no
 
 ~/bin/logged-monitor-update &
 
-pulseaudio --start
-
 numlockx &
 
 exec awesome >> ~/.cache/awesome/stdout 2>> ~/.cache/awesome/stderr
