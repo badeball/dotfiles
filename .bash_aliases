@@ -27,6 +27,7 @@ alias r='time bundle exec rspec -b'
 # Docker development
 alias d='docker'
 alias dc='docker-compose '
+alias dm='docker-machine '
 
 # Scary!
 alias skype='echo "You can not do this as a regular user"'
