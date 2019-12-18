@@ -23,10 +23,15 @@ fi
 # add ~/bin to the search path
 export PATH=$PATH:~/bin:./node_modules/.bin
 
+# https://aur.archlinux.org/packages/chruby/
 [ -f '/usr/share/chruby/chruby.sh' ] && . '/usr/share/chruby/chruby.sh'
 [ -f '/usr/share/chruby/auto.sh' ] && . '/usr/share/chruby/auto.sh'
+
+# https://aur.archlinux.org/packages/nvm/
 [ -f '/usr/share/nvm/init-nvm.sh' ] && . '/usr/share/nvm/init-nvm.sh'
 
+# https://www.archlinux.org/packages/community/any/z/
+# https://www.archlinux.org/packages/community/x86_64/fzf/
 if [ -f "/usr/share/z/z.sh" ]; then
     . /usr/share/z/z.sh
 
