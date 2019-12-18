@@ -27,6 +27,17 @@ export PATH=$PATH:~/bin:./node_modules/.bin
 [ -f '/usr/share/chruby/auto.sh' ] && . '/usr/share/chruby/auto.sh'
 [ -f '/usr/share/nvm/init-nvm.sh' ] && . '/usr/share/nvm/init-nvm.sh'
 
+if [ -f "/usr/share/z/z.sh" ]; then
+    . /usr/share/z/z.sh
+
+    unalias z 2> /dev/null
+
+    z() {
+      [ $# -gt 0 ] && _z "$*" && return
+      cd "$(_z -l 2>&1 | fzf --height 40% --nth 2.. --reverse --inline-info +s --tac --query "${*##-* }" | sed 's/^[0-9,.]* *//')"
+    }
+fi
+
 HISTSIZE=1000000
 
 export EDITOR="vim"
