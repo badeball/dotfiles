@@ -1,5 +1,6 @@
 [user]
     name = "Jonas Amundsen"
+    email = "jonasba@gmail.com"
 [core]
 	editor = vim
 	excludesfile = /home/jonas/.gitignore
@@ -13,4 +14,6 @@
 [push]
 	default = simple
 [rerere]
-	enabled = true
+    enabled = true
+[includeIf "gitdir:~/projects/klaveness/"]
+    path = ~/projects/klaveness/.gitconfig
