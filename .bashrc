@@ -45,6 +45,14 @@ if [ -f "/usr/share/z/z.sh" ]; then
     }
 fi
 
+cenv() {
+    tag=$(grep -o "@[^.]\+" ~/.klaveness/cargo.properties | uniq | cut -c1 --complement - | fzf)
+
+    if [ $? -eq 0 ]; then
+        env "CONSTRETTO_TAGS=$tag" "$@"
+    fi
+}
+
 HISTSIZE=1000000
 
 export EDITOR="vim"
