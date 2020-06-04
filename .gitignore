@@ -1,5 +1,6 @@
-# Project directory for my IDE (RubyMine)
+# Project directories for IDEs
 .idea/
+.vscode/
 
 # Ruby version manager
 .ruby-version
