@@ -5,12 +5,16 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
 fi
 
+# Shorthands
 alias ll='ls -lh'
-alias grep='grep --exclude-dir={.git,node_modules}'
 
 function lll {
     ls -lh --color=always  "${@}" | less -RF
 }
+
+# Added options
+alias feh='feh --scale-down --no-screen-clip'
+alias grep='grep --exclude-dir={.git,node_modules}'
 
 # SSHs
 alias json='ssh media.coreticket.no'
@@ -28,6 +32,10 @@ alias r='time bundle exec rspec -b'
 alias d='docker'
 alias dc='docker-compose '
 alias dm='docker-machine '
+
+# Various stuff
+alias tf='terraform'
+alias hideme='unset HISTFILE'
 
 # Scary!
 alias skype='echo "You can not do this as a regular user"'
