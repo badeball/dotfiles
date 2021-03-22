@@ -1,14 +1,22 @@
 [user]
-    name = "Jonas Amundsen"
-    email = "jonasba@gmail.com"
+    name = Jonas Amundsen
+    email = jonasba@gmail.com
 [core]
 	editor = vim
 	excludesfile = /home/jonas/.gitignore
 	pager = less -S
 [alias]
-	lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --branches --remotes --tags
-	lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''		  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --branches --remotes --tags
-	lg = !"git lg1"
+    lg1 = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold blue)%h%C(reset) - %C(bold green)(%ar)%C(reset) %C(white)%s%C(reset) %C(dim white)- %an%C(reset)%C(bold yellow)%d%C(reset)' --branches --remotes --tags
+    lg2 = log --graph --abbrev-commit --decorate --format=format:'%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n''\t\t  %C(white)%s%C(reset) %C(dim white)- %an%C(reset)' --branches --remotes --tags
+    lg = !git lg1
+    c = commit
+    co = checkout
+    d = diff -M
+    dc = diff --cached -M
+    l = log
+    lp = log -p
+    s = status
+    ap = add -p
 [color]
 	ui = true
 [push]
@@ -17,3 +25,7 @@
     enabled = true
 [includeIf "gitdir:~/projects/klaveness/"]
     path = ~/projects/klaveness/.gitconfig
+[init]
+	defaultBranch = master
+[commit]
+	verbose = true
