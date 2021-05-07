@@ -25,6 +25,8 @@
     enabled = true
 [includeIf "gitdir:~/projects/klaveness/"]
     path = ~/projects/klaveness/.gitconfig
+[pull]
+	rebase = false
 [init]
 	defaultBranch = master
 [commit]
